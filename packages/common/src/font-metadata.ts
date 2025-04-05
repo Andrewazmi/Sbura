@@ -100,6 +100,22 @@ export const FONT_METADATA: Record<number, FontMetadata> = {
     },
     serverSide: true,
   },
+  [FONT_FAMILY.Zain]: {
+    metrics: {
+      unitsPerEm: 1000,
+      ascender: 900,
+      descender: -300,
+      lineHeight: 1.2,
+    },
+  },
+  [FONT_FAMILY["IBM Plex Sans"]]: {
+    metrics: {
+      unitsPerEm: 1000,
+      ascender: 1025,
+      descender: -275,
+      lineHeight: 1.3,
+    },
+  },
   [FONT_FAMILY_FALLBACKS.Xiaolai]: {
     metrics: {
       unitsPerEm: 1000,
@@ -133,6 +149,7 @@ export const GOOGLE_FONTS_RANGES = {
   CYRILIC: "U+0301, U+0400-045F, U+0490-0491, U+04B0-04B1, U+2116",
   VIETNAMESE:
     "U+0102-0103, U+0110-0111, U+0128-0129, U+0168-0169, U+01A0-01A1, U+01AF-01B0, U+0300-0301, U+0303-0304, U+0308-0309, U+0323, U+0329, U+1EA0-1EF9, U+20AB",
+  ARABIC: "U+0600-06FF, U+0750-077F, U+08A0-08FF, U+FB50-FDFF, U+FE70-FEFF",
 };
 
 /** local protocol to skip the local font from registering or inlining */

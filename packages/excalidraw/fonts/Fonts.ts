@@ -1,9 +1,9 @@
 import {
+  CJK_HAND_DRAWN_FALLBACK_FONT,
   FONT_FAMILY,
   FONT_FAMILY_FALLBACKS,
-  CJK_HAND_DRAWN_FALLBACK_FONT,
-  WINDOWS_EMOJI_FALLBACK_FONT,
   getFontFamilyFallbacks,
+  WINDOWS_EMOJI_FALLBACK_FONT,
 } from "@excalidraw/common";
 import { getContainerElement } from "@excalidraw/element/textElement";
 import { charWidth } from "@excalidraw/element/textMeasurements";
@@ -34,11 +34,13 @@ import { EmojiFontFaces } from "./Emoji";
 import { ExcalidrawFontFace } from "./ExcalidrawFontFace";
 import { ExcalifontFontFaces } from "./Excalifont";
 import { HelveticaFontFaces } from "./Helvetica";
+import { IBMPlexFontFaces } from "./IBMPlex";
 import { LiberationFontFaces } from "./Liberation";
 import { LilitaFontFaces } from "./Lilita";
 import { NunitoFontFaces } from "./Nunito";
 import { VirgilFontFaces } from "./Virgil";
 import { XiaolaiFontFaces } from "./Xiaolai";
+import { ZainFontFaces } from "./Zain";
 
 import type Scene from "../scene/Scene";
 
@@ -384,13 +386,13 @@ export class Fonts {
     init("Cascadia", ...CascadiaFontFaces);
     init("Comic Shanns", ...ComicShannsFontFaces);
     init("Excalifont", ...ExcalifontFontFaces);
-    // keeping for backwards compatibility reasons, uses system font (Helvetica on MacOS, Arial on Win)
     init("Helvetica", ...HelveticaFontFaces);
-    // used for server-side pdf & png export instead of helvetica (technically does not need metrics, but kept in for consistency)
     init("Liberation Sans", ...LiberationFontFaces);
     init("Lilita One", ...LilitaFontFaces);
     init("Nunito", ...NunitoFontFaces);
     init("Virgil", ...VirgilFontFaces);
+    init("Zain", ...ZainFontFaces);
+    init("IBM Plex Sans", ...IBMPlexFontFaces);
 
     // fallback font faces
     init(CJK_HAND_DRAWN_FALLBACK_FONT, ...XiaolaiFontFaces);
