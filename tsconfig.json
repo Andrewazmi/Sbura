@@ -3,7 +3,7 @@
     "rootDir": "./",
     "target": "ESNext",
     "lib": ["dom", "dom.iterable", "esnext"],
-    "types": ["vitest/globals", "@testing-library/jest-dom"],
+    "types": ["node", "vitest/globals", "@testing-library/jest-dom"],
     "allowJs": true,
     "skipLibCheck": true,
     "esModuleInterop": true,
@@ -19,18 +19,18 @@
     "jsx": "react-jsx",
     "baseUrl": ".",
     "paths": {
-      "@excalidraw/common": ["./packages/common/src/index.ts"],
-      "@excalidraw/common/*": ["./packages/common/src/*"],
-      "@excalidraw/excalidraw": ["./packages/excalidraw/index.tsx"],
-      "@excalidraw/excalidraw/*": ["./packages/excalidraw/*"],
-      "@excalidraw/element": ["./packages/element/src/index.ts"],
-      "@excalidraw/element/*": ["./packages/element/src/*"],
-      "@excalidraw/math": ["./packages/math/src/index.ts"],
-      "@excalidraw/math/*": ["./packages/math/src/*"],
-      "@excalidraw/utils": ["./packages/utils/src/index.ts"],
-      "@excalidraw/utils/*": ["./packages/utils/src/*"]
+      "@ExcaliDraw/common": ["./packages/common/src/index.ts"],
+      "@ExcaliDraw/common/*": ["./packages/common/src/*"],
+      "@ExcaliDraw/ExcaliDraw": ["./packages/ExcaliDraw/index.tsx"],
+      "@ExcaliDraw/ExcaliDraw/*": ["./packages/ExcaliDraw/*"],
+      "@ExcaliDraw/element": ["./packages/element/src/index.ts"],
+      "@ExcaliDraw/element/*": ["./packages/element/src/*"],
+      "@ExcaliDraw/math": ["./packages/math/src/index.ts"],
+      "@ExcaliDraw/math/*": ["./packages/math/src/*"],
+      "@ExcaliDraw/utils": ["./packages/utils/src/index.ts"],
+      "@ExcaliDraw/utils/*": ["./packages/utils/src/*"]
     }
   },
-  "include": ["packages", "excalidraw-app"],
+  "include": ["packages", "ExcaliDraw-app", "sboura-app"],
   "exclude": ["examples", "dist", "types", "tests"]
 }
