@@ -21,6 +21,17 @@ cat > excalidraw-app/tsconfig.node.json << EOL
 }
 EOL
 
+# Create global.d.ts with type declarations for missing modules
+cat > excalidraw-app/global.d.ts << EOL
+/// <reference types="vite/client" />
+import "@excalidraw/excalidraw/css";
+import "@excalidraw/excalidraw/global";
+
+// Add type declaration for missing testing libraries
+declare module "@testing-library/jest-dom" {}
+declare module "vitest/globals" {}
+EOL
+
 # Change to excalidraw-app directory
 cd excalidraw-app
 
