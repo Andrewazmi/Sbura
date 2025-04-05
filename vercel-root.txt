@@ -1,0 +1,2 @@
+This file marks the root directory of the project for Vercel deployment.
+Please deploy from this directory, not from any subdirectory.
