@@ -1,4 +1,4 @@
-<a href="https://excalidraw.com/" target="_blank" rel="noopener">
+<a href="https://sbura.grovlix.com/" target="_blank" rel="noopener">
   <picture>
     <source media="(prefers-color-scheme: dark)" alt="Excalidraw" srcset="https://excalidraw.nyc3.cdn.digitaloceanspaces.com/github/excalidraw_github_cover_2_dark.png" />
     <img alt="Excalidraw" src="https://excalidraw.nyc3.cdn.digitaloceanspaces.com/github/excalidraw_github_cover_2.png" />
@@ -6,10 +6,10 @@
 </a>
 
 <h4 align="center">
-  <a href="https://excalidraw.com">Excalidraw Editor</a> |
-  <a href="https://plus.excalidraw.com/blog">Blog</a> |
+  <a href="https://sbura.grovlix.com/"">Excalidraw Editor</a> |
+  <a href="https://plus.sbura.grovlix.com/blog">Blog</a> |
   <a href="https://docs.excalidraw.com">Documentation</a> |
-  <a href="https://plus.excalidraw.com">Excalidraw+</a>
+  <a href="https://plus.excalidraw.">Excalidraw+</a>
 </h4>
 
 <div align="center">
@@ -39,7 +39,7 @@
   </a>
 </p>
 
-<div align="center">
+<div align="ccomenter">
   <figure>
     <a href="https://excalidraw.com" target="_blank" rel="noopener">
       <img src="https://excalidraw.nyc3.cdn.digitaloceanspaces.com/github%2Fproduct_showcase.png" alt="Product showcase" />

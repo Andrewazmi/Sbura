@@ -29,10 +29,12 @@
     "@excalidraw/random-username": "1.0.0",
     "@sentry/browser": "9.0.1",
     "callsites": "4.2.0",
+    "clsx": "2.1.1",
     "firebase": "11.3.1",
     "i18next-browser-languagedetector": "6.1.4",
     "idb-keyval": "6.0.3",
     "jotai": "2.11.0",
+    "lodash.throttle": "4.1.1",
     "react": "19.0.0",
     "react-dom": "19.0.0",
     "socket.io-client": "4.7.2",
@@ -51,6 +53,8 @@
     "build:preview": "yarn build && vite preview --port 5000"
   },
   "devDependencies": {
+    "@testing-library/jest-dom": "6.6.3",
+    "@types/testing-library__jest-dom": "6.0.0",
     "vite-plugin-sitemap": "0.7.1"
   }
 }

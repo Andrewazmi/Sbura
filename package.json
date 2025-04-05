@@ -1,7 +1,7 @@
 {
   "private": true,
   "name": "sbura",
-  "description": "سبورة | Sbura - A virtual collaborative whiteboard tool",
+  "description": "سبورة  — لوحة رسم تعاونية سهلة الاستخدام",
   "devDependencies": {
     "@babel/preset-env": "7.26.9",
     "@braintree/sanitize-url": "6.0.2",

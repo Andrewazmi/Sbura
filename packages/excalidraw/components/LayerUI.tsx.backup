@@ -97,7 +97,6 @@ interface LayerUIProps {
   generateLinkForSelection?: AppProps["generateLinkForSelection"];
 }
 
-// TEMPORARY: Social links and other menu items removed - restore from LayerUI.tsx.backup when needed
 const DefaultMainMenu: React.FC<{
   UIOptions: AppProps["UIOptions"];
 }> = ({ UIOptions }) => {

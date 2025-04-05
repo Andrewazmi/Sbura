@@ -25,7 +25,7 @@ import "./PublishLibrary.scss";
 
 import type { ReactNode } from "react";
 import type { ExportedLibraryData } from "../data/types";
-import type { LibraryItems, LibraryItem, UIAppState } from "../types";
+import type { LibraryItem, LibraryItems, UIAppState } from "../types";
 
 interface PublishLibraryDataParams {
   authorName: string;
@@ -387,7 +387,7 @@ const PublishLibrary = ({
               i18nKey="publishDialog.noteDescription"
               link={(el) => (
                 <a
-                  href="https://libraries.excalidraw.com"
+                  href="https://libraries.sbura.grovlix.com/"
                   target="_blank"
                   rel="noopener noreferrer"
                 >
