@@ -1,5 +1,5 @@
 {
-  "buildCommand": "cd .. && yarn --cwd excalidraw-app add vite cross-env typescript --no-lockfile && SKIP_TYPECHECK=true yarn --cwd excalidraw-app build",
+  "buildCommand": "cd .. && yarn --cwd excalidraw-app add vite cross-env typescript @types/node @testing-library/jest-dom @types/testing-library__jest-dom --no-lockfile && SKIP_TYPECHECK=true NODE_ENV=production yarn --cwd excalidraw-app build",
   "outputDirectory": "../excalidraw-app/build",
   "installCommand": "cd .. && yarn install"
 }
