@@ -3,6 +3,6 @@
   "version": "1.0.0",
   "private": true,
   "scripts": {
-    "build": "cd .. && yarn --cwd excalidraw-app add vite cross-env typescript @types/node @testing-library/jest-dom @types/testing-library__jest-dom --no-lockfile && SKIP_TYPECHECK=true NODE_ENV=production yarn --cwd excalidraw-app build"
+    "build": "cd .. && yarn --cwd excalidraw-app add vite cross-env typescript @types/node @testing-library/jest-dom @types/testing-library__jest-dom vitest --no-lockfile && cd excalidraw-app && SKIP_TYPECHECK=true NODE_ENV=production VITE_APP_GIT_SHA=$VERCEL_GIT_COMMIT_SHA VITE_APP_ENABLE_TRACKING=true vite build --skipTypeCheck"
   }
 }
