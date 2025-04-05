@@ -1,9 +1,9 @@
 import React, {
-  useMemo,
-  useState,
-  useRef,
-  useEffect,
   useCallback,
+  useEffect,
+  useMemo,
+  useRef,
+  useState,
   type KeyboardEventHandler,
 } from "react";
 
@@ -26,8 +26,8 @@ import { QuickSearch } from "../QuickSearch";
 import { ScrollableList } from "../ScrollableList";
 import DropdownMenuGroup from "../dropdownMenu/DropdownMenuGroup";
 import DropdownMenuItem, {
-  DropDownMenuItemBadgeType,
   DropDownMenuItemBadge,
+  DropDownMenuItemBadgeType,
 } from "../dropdownMenu/DropdownMenuItem";
 import {
   FontFamilyCodeIcon,
@@ -68,6 +68,7 @@ const getFontFamilyIcon = (fontFamily: FontFamilyValues): JSX.Element => {
       return FreedrawIcon;
     case FONT_FAMILY.Nunito:
     case FONT_FAMILY.Helvetica:
+    case FONT_FAMILY["IBM Plex Sans"]:
       return FontFamilyNormalIcon;
     case FONT_FAMILY["Lilita One"]:
       return FontFamilyHeadingIcon;

@@ -76,6 +76,15 @@ module.exports.woff2BrowserPlugin = () => {
 
       <!-- Preload all default fonts to avoid swap on init -->
       <link
+        rel="preconnect"
+        href="https://fonts.googleapis.com"
+      />
+      <link
+        rel="preconnect"
+        href="https://fonts.gstatic.com"
+        crossorigin
+      />
+      <link
         rel="preload"
         href="${OSS_FONTS_CDN}fonts/Excalifont/Excalifont-Regular-a88b72a24fb54c9f94e3b5fdaa7481c9.woff2"
         as="font"
@@ -97,6 +106,28 @@ module.exports.woff2BrowserPlugin = () => {
         type="font/woff2"
         crossorigin="anonymous"
       />
+      <!-- Preload Zain Regular font for initial render -->
+      <link
+        rel="preload"
+        href="${OSS_FONTS_CDN}fonts/Zain/Zain-Regular.woff2"
+        as="font"
+        type="font/woff2"
+        crossorigin="anonymous"
+      />
+      <!-- Preload IBM Plex Sans Regular font for initial render -->
+      <link
+        rel="preload"
+        href="${OSS_FONTS_CDN}fonts/IBMPlex/IBMPlexSans-Regular.woff2"
+        as="font"
+        type="font/woff2"
+        crossorigin="anonymous"
+      />
+      <style>
+        /* Add RTL support for Arabic text */
+        [dir="rtl"] {
+          font-family: 'Zain', sans-serif !important;
+        }
+      </style>
     `,
         );
       }
