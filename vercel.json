@@ -67,5 +67,5 @@
   ],
   "outputDirectory": "excalidraw-app/build",
   "installCommand": "yarn install",
-  "buildCommand": "cd excalidraw-app && yarn add vite cross-env typescript --no-lockfile && SKIP_TYPECHECK=true yarn build"
+  "buildCommand": "echo 'Current directory:' && pwd && echo 'Directory listing:' && ls -la && ls -la excalidraw-app && yarn --cwd excalidraw-app add vite cross-env typescript --no-lockfile && SKIP_TYPECHECK=true yarn --cwd excalidraw-app build"
 }
