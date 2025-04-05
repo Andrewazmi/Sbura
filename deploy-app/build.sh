@@ -25,4 +25,4 @@ EOL
 cd excalidraw-app
 
 # Run build with TypeScript checking disabled
-SKIP_TYPECHECK=true NODE_ENV=production VITE_APP_GIT_SHA=$VERCEL_GIT_COMMIT_SHA VITE_APP_ENABLE_TRACKING=true vite build --skipTypeCheck
+SKIP_TYPECHECK=true NODE_ENV=production VITE_APP_GIT_SHA=$VERCEL_GIT_COMMIT_SHA VITE_APP_ENABLE_TRACKING=true vite build
