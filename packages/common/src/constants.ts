@@ -27,7 +27,7 @@ export const isBrave = () =>
 export const supportsResizeObserver =
   typeof window !== "undefined" && "ResizeObserver" in window;
 
-export const APP_NAME = "Excalidraw";
+export const APP_NAME = "سبورة | Sbura";
 
 // distance when creating text before it's considered `autoResize: false`
 // we're using higher threshold so that clicks that end up being drags
@@ -142,7 +142,6 @@ export const FONT_FAMILY = {
   "Comic Shanns": 8,
   "Liberation Sans": 9,
   Zain: 10,
-  "IBM Plex Sans": 11,
 };
 
 export const FONT_FAMILY_FALLBACKS = {

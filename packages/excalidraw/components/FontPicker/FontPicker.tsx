@@ -38,12 +38,6 @@ export const DEFAULT_FONTS = [
     text: t("labels.code"),
     testId: "font-family-code",
   },
-  {
-    value: FONT_FAMILY["IBM Plex Sans"],
-    icon: FontFamilyNormalIcon,
-    text: t("labels.ibmPlex"),
-    testId: "font-family-ibm-plex",
-  },
 ];
 
 const defaultFontFamilies = new Set(DEFAULT_FONTS.map((x) => x.value));

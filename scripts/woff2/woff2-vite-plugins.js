@@ -114,14 +114,6 @@ module.exports.woff2BrowserPlugin = () => {
         type="font/woff2"
         crossorigin="anonymous"
       />
-      <!-- Preload IBM Plex Sans Regular font for initial render -->
-      <link
-        rel="preload"
-        href="${OSS_FONTS_CDN}fonts/IBMPlex/IBMPlexSans-Regular.woff2"
-        as="font"
-        type="font/woff2"
-        crossorigin="anonymous"
-      />
       <style>
         /* Add RTL support for Arabic text */
         [dir="rtl"] {

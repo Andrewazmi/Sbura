@@ -1,12 +1,14 @@
 import path from "path";
-import { defineConfig, loadEnv } from "vite";
+
 import react from "@vitejs/plugin-react";
-import svgrPlugin from "vite-plugin-svgr";
-import { ViteEjsPlugin } from "vite-plugin-ejs";
-import { VitePWA } from "vite-plugin-pwa";
+import { defineConfig, loadEnv } from "vite";
 import checker from "vite-plugin-checker";
+import { ViteEjsPlugin } from "vite-plugin-ejs";
 import { createHtmlPlugin } from "vite-plugin-html";
+import { VitePWA } from "vite-plugin-pwa";
 import Sitemap from "vite-plugin-sitemap";
+import svgrPlugin from "vite-plugin-svgr";
+
 import { woff2BrowserPlugin } from "../scripts/woff2/woff2-vite-plugins";
 export default defineConfig(({ mode }) => {
   // To load .env variables
@@ -25,7 +27,10 @@ export default defineConfig(({ mode }) => {
       alias: [
         {
           find: /^@excalidraw\/common$/,
-          replacement: path.resolve(__dirname, "../packages/common/src/index.ts"),
+          replacement: path.resolve(
+            __dirname,
+            "../packages/common/src/index.ts",
+          ),
         },
         {
           find: /^@excalidraw\/common\/(.*?)/,
@@ -33,7 +38,10 @@ export default defineConfig(({ mode }) => {
         },
         {
           find: /^@excalidraw\/element$/,
-          replacement: path.resolve(__dirname, "../packages/element/src/index.ts"),
+          replacement: path.resolve(
+            __dirname,
+            "../packages/element/src/index.ts",
+          ),
         },
         {
           find: /^@excalidraw\/element\/(.*?)/,
@@ -41,7 +49,10 @@ export default defineConfig(({ mode }) => {
         },
         {
           find: /^@excalidraw\/excalidraw$/,
-          replacement: path.resolve(__dirname, "../packages/excalidraw/index.tsx"),
+          replacement: path.resolve(
+            __dirname,
+            "../packages/excalidraw/index.tsx",
+          ),
         },
         {
           find: /^@excalidraw\/excalidraw\/(.*?)/,
@@ -57,7 +68,10 @@ export default defineConfig(({ mode }) => {
         },
         {
           find: /^@excalidraw\/utils$/,
-          replacement: path.resolve(__dirname, "../packages/utils/src/index.ts"),
+          replacement: path.resolve(
+            __dirname,
+            "../packages/utils/src/index.ts",
+          ),
         },
         {
           find: /^@excalidraw\/utils\/(.*?)/,
@@ -213,7 +227,7 @@ export default defineConfig(({ mode }) => {
             },
           ],
           start_url: "/",
-          id:"excalidraw",
+          id: "excalidraw",
           display: "standalone",
           theme_color: "#121212",
           background_color: "#ffffff",

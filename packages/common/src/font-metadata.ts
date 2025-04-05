@@ -108,14 +108,6 @@ export const FONT_METADATA: Record<number, FontMetadata> = {
       lineHeight: 1.2,
     },
   },
-  [FONT_FAMILY["IBM Plex Sans"]]: {
-    metrics: {
-      unitsPerEm: 1000,
-      ascender: 1025,
-      descender: -275,
-      lineHeight: 1.3,
-    },
-  },
   [FONT_FAMILY_FALLBACKS.Xiaolai]: {
     metrics: {
       unitsPerEm: 1000,

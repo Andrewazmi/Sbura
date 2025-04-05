@@ -175,7 +175,6 @@ body.excalidraw-cursor-resize * {
       display: flex;
       column-gap: 0.5rem;
       row-gap: 0.5rem;
-      max-width: 100%;
 
       label {
         font-size: 0.75rem;
@@ -190,12 +189,6 @@ body.excalidraw-cursor-resize * {
 
       .iconRow {
         margin-top: 8px;
-      }
-
-      // Font picker specific styling
-      .FontPicker__container & {
-        flex-wrap: nowrap;
-        justify-content: flex-start;
       }
     }
 
