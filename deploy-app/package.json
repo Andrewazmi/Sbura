@@ -1,0 +1,8 @@
+{
+  "name": "deploy-app",
+  "version": "1.0.0",
+  "private": true,
+  "scripts": {
+    "build": "cd .. && yarn --cwd excalidraw-app add vite cross-env typescript --no-lockfile && SKIP_TYPECHECK=true yarn --cwd excalidraw-app build"
+  }
+}
