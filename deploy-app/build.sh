@@ -3,8 +3,9 @@
 # Change to repository root
 cd ..
 
-# Install dependencies for excalidraw-app
+# Install dependencies for excalidraw-app and packages/excalidraw
 yarn --cwd excalidraw-app add vite cross-env typescript @types/node @testing-library/jest-dom @types/testing-library__jest-dom vitest clsx lodash.throttle --no-lockfile
+yarn --cwd packages/excalidraw add clsx --no-lockfile
 
 # Change to excalidraw-app directory
 cd excalidraw-app
