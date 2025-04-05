@@ -4,7 +4,7 @@
 cd ..
 
 # Install dependencies for excalidraw-app and packages/excalidraw
-yarn --cwd excalidraw-app add vite cross-env typescript @types/node @testing-library/jest-dom @types/testing-library__jest-dom vitest clsx lodash.throttle @types/vitest @types/react @types/react-dom --no-lockfile
+yarn --cwd excalidraw-app add vite cross-env typescript @types/node @testing-library/jest-dom @types/testing-library__jest-dom vitest clsx lodash.throttle vite-plugin-html @types/react @types/react-dom --no-lockfile
 yarn --cwd packages/excalidraw add clsx --no-lockfile
 
 # Create tsconfig.node.json to skip type checking during the build if it doesn't exist
